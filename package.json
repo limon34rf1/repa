@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && vercel --prod"
-  },
+    "vercel-build": "vite build"
+  }
   "dependencies": {
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
