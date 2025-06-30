@@ -1,0 +1,59 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.app-title {
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.days-list {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.day-button {
+  font-family: 'Soyuz Grotesk', sans-serif;
+  font-weight: 700;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+
+.day-button.active {
+  border-color: #FFD700;
+  background: rgba(255, 215, 0, 0.1);
+  color: #333;
+}
+
+.day-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 22px;
+  }
+  
+  .day-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+  }
+}
